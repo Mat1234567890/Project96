@@ -14,7 +14,6 @@ user_name = localStorage.getItem("username");
 room_name = localStorage.getItem("room_name");
 
 function Send() {
-    console.log("?");
       msg = document.getElementById("msg").value;
       firebase.database().ref(room_name).push({
             name: user_name,
